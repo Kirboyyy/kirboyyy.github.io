@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
 export function Resume() {
   const classes = useStyles();
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("md"), {
+  const isMobile = useMediaQuery(theme.breakpoints.down("lg"), {
     defaultMatches: true,
   });
   return (
@@ -34,13 +34,13 @@ export function Resume() {
         <Grid container item xs={12}>
           <Personal {...data.personal} />
         </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} lg={9} xl={4}>
           <Sliders skills={data.skills} languages={data.languages} />
         </Grid>
-        <Grid item xs={12} md={2}>
+        <Grid item xs={12} lg={3} xl={2}>
           <Hobbies hobbies={data.hobbies} isMobile={isMobile} />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} xl={6}>
           <Experience experience={data.experience} />
         </Grid>
       </Grid>

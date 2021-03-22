@@ -37,9 +37,9 @@ export default function Sidebar(props) {
         </Grid>
         <Grid item xs={12} justify="center" container spacing={2}>
           {data.socials.map((social) => (
-            <Grid item md={2} key={social.alt}>
+            <Grid item xs={2} lg={2} key={social.alt}>
               <Link href={social.url}>
-                <FontAwesomeIcon size="4x" icon={social.icon}></FontAwesomeIcon>
+                <FontAwesomeIcon size="3x" icon={social.icon}></FontAwesomeIcon>
               </Link>
             </Grid>
           ))}

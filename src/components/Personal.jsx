@@ -4,10 +4,8 @@ export default function Personal(props) {
   return (
     <>
       <Grid item xs={12}>
-        <Hidden mdDown>
-          <Typography variant="h2">
-            {props.name}
-          </Typography>
+        <Hidden smDown>
+          <Typography variant="h2">{props.name}</Typography>
           <Typography
             color="primary"
             style={{ textTransform: "uppercase", lineHeight: 0.6 }}
@@ -36,6 +34,11 @@ export default function Personal(props) {
         <Typography variant="overline">Email</Typography>
         <Typography>{props.mail}</Typography>
       </Grid>
+      <Hidden lgUp>
+        <Grid item xs={12}>
+          <Divider style={{ marginTop: 8 }} />
+        </Grid>
+      </Hidden>
     </>
   );
 }

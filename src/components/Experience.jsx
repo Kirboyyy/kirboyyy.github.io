@@ -55,7 +55,7 @@ export default function Experience(props) {
           ))}
         </Timeline>
       </Hidden>
-      <Hidden mdUp>
+      <Hidden lgUp>
         <Grid container spacing={2}>
           {props.experience.map((experience, key) => (
             <Grid item xs={12} key={key}>

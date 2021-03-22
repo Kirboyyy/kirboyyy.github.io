@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
   sidebar: {
     backgroundColor: "rgba(18,18,18,0.80)",
     [theme.breakpoints.up("md")]: {
-      height: "100vh"
+      height: "unset"
     },
   },
 }));
